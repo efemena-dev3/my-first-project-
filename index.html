@@ -1,56 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Project</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<div class="container">
+    <form class="login-form">
+        <h2>Login</h2>
 
-    <!-- Header -->
-    <header>
-        <h1>Welcome to My First Web Project</h1>
-    </header>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
 
-    <!-- Main Sections -->
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>This is my first web development project. I’m learning HTML, CSS, and JS!</p>
-        </section>
+        <div class="options">
+            <label>
+                <input type="checkbox"> Remember Me
+            </label>
+        </div>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li>Project 1: Simple webpage</li>
-                <li>Project 2: Interactive button</li>
-            </ul>
-        </section>
+        <button type="submit">Login</button>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: myemail@example.com</p>
-        </section>
+        <p class="signup-link">
+            Not a member? <a href="#">Click here</a>
+        </p>
+    </form>
+</div>
 
-        <button id="clickMe">Click Me!</button>
-        <p id="message"></p>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 My First Web Project</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
