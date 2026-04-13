@@ -1,23 +1,98 @@
-body {
-    font-family: Arial;
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+    background: #0b1220;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* HERO SECTION */
 header {
-    background: black;
-    color: white;
-    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #1d4ed8, #0b1220);
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #cbd5e1;
 }
 
 .btn {
-    background: blue;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #22c55e;
     color: white;
-    padding: 10px 20px;
+    border-radius: 8px;
     text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
 }
 
+.btn:hover {
+    background: #16a34a;
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
 section {
-    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+/* HEADINGS */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-left: 5px solid #3b82f6;
+    padding-left: 10px;
+}
+
+/* CARDS */
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    background: #111827;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    background: #1f2937;
+}
+
+/* CONTACT */
+#contact a {
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
