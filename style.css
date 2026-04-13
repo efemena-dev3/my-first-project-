@@ -1,49 +1,23 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
-}
-
-.login-form h2 {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-.login-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.options {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background: #2563eb;
+header {
+    background: black;
     color: white;
-    border: none;
-    cursor: pointer;
+    padding: 50px;
 }
 
-button:hover {
-    background: #1d4ed8;
+.btn {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
-.signup-link {
-    text-align: center;
-    margin-top: 10px;
+section {
+    padding: 30px;
 }
