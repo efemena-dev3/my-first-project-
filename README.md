@@ -25,8 +25,8 @@ I am a Software Engineering student passionate about:
 - Project 3
 
 ## 📞 Contact Me
-- WhatsApp: https://wa.me/234YOURNUMBER
-- Email: your@email.com
+- WhatsApp: https://wa.me/2348066739925
+- Email: efemenaahirhima@gmail.com
 
 ## 🌍 Live Website
 (Your GitHub Pages link goes here)
