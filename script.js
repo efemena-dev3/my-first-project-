@@ -1,21 +1,18 @@
-const form = document.querySelector(".login-form");
-const emailInput = form.querySelector("input[type='email']");
-const rememberMe = form.querySelector("input[type='checkbox']");
+// Smooth scroll for links
+document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
 
-// Load saved email
-window.onload = () => {
-    const savedEmail = localStorage.getItem("email");
-    if (savedEmail) {
-        emailInput.value = savedEmail;
-        rememberMe.checked = true;
-    }
-};
+// Hire Me button click alert
+const hireBtn = document.querySelector('.btn');
 
-// Save email if checked
-form.addEventListener("submit", (e) => {
-    if (rememberMe.checked) {
-        localStorage.setItem("email", emailInput.value);
-    } else {
-        localStorage.removeItem("email");
-    }
+hireBtn.addEventListener('click', () => {
+    alert("You're about to contact Efemena 🚀");
 });
