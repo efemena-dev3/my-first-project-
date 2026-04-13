@@ -16,3 +16,7 @@ const hireBtn = document.querySelector('.btn');
 hireBtn.addEventListener('click', () => {
     alert("You're about to contact Efemena 🚀");
 });
+// Button click log (extra feature)
+document.querySelector(".btn").addEventListener("click", () => {
+    console.log("Hire Me clicked 🚀");
+});
